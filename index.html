@@ -17,12 +17,15 @@
   <a href="#" class="nav-logo">
     CORTEX
   </a>
-  <ul>
-    <li><a href="#services">Services</a></li>
-    <li><a href="#work">Work</a></li>
-    <li><a href="#team">Team</a></li>
-    <li><a href="#tally-open=dWPr8o&tally-layout=modal&tally-width=700&tally-hide-title=1" class="nav-cta">Get in Touch</a></li>
+  <ul id="navLinks">
+    <li><a href="#services" onclick="closeNav()">Services</a></li>
+    <li><a href="#work" onclick="closeNav()">Work</a></li>
+    <li><a href="#team" onclick="closeNav()">Team</a></li>
+    <li><a href="#tally-open=dWPr8o&tally-layout=modal&tally-width=700&tally-hide-title=1" class="nav-cta" onclick="closeNav()">Get in Touch</a></li>
   </ul>
+  <button class="nav-burger" id="navBurger" onclick="toggleNav()" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
 </nav>
 
 

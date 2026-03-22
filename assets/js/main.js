@@ -17,6 +17,16 @@ function toggleCC(btn) {
   btn.querySelector('.lbl').textContent = btn.classList.contains('open') ? 'Close' : 'Read Case Study';
 }
 
+// MOBILE NAV
+function toggleNav() {
+  document.getElementById('navLinks').classList.toggle('open');
+  document.getElementById('navBurger').classList.toggle('open');
+}
+function closeNav() {
+  document.getElementById('navLinks').classList.remove('open');
+  document.getElementById('navBurger').classList.remove('open');
+}
+
 // TEAM CAROUSEL — infinite loop via cloning
 (function () {
   const track    = document.getElementById('teamCarousel');
